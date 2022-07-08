@@ -1,12 +1,10 @@
 import socket
 
-MAX_SIZE_BYTES = 65535 # Mazimum size of a UDP datagram
-CHAR_ENCODING = 'ascii'
+from constants import CHAR_ENCODING, MAX_SIZE_BYTES, SERVER_SOCKET_HOST, SERVER_SOCKET_PORT
 
 s = socket.socket( socket.AF_INET, socket.SOCK_DGRAM )
-port = 3000
-hostname = '127.0.0.1'
-s.bind(( hostname, port ))
+
+s.bind(( SERVER_SOCKET_HOST, SERVER_SOCKET_PORT ))
 print('Listening at {}' . format(s.getsockname()))
 
 while True:

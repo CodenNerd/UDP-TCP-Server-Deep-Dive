@@ -1,0 +1,5 @@
+
+MAX_SIZE_BYTES = 65535 # Mazimum size of a UDP datagram
+CHAR_ENCODING = 'ascii'
+SERVER_SOCKET_HOST = '127.0.0.1'
+SERVER_SOCKET_PORT = 3000
