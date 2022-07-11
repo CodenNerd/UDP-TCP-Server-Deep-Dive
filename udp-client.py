@@ -22,4 +22,4 @@ while True:
     if (address in hosts):
         print('The server {} replied with {!r}'.format(address, text))
     else:
-        print('message {!r} from unexpcted host {}!'.format(text, address))
+        print('message {!r} from unexpected host {}!'.format(text, address))
